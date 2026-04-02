@@ -1,18 +1,21 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
-    --color-primary: #000; 
-    --color-background: #fff; 
+    --color-primary: #000;
+    --color-secondary: #aeaeae;
+    --color-background: #fff;
     --color-highlight: aqua;
     --color-menu-background: gray;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-primary: #fff; 
+        --color-primary: #fff;
+        --color-secondary: #aeaeae;
         --color-background: #181a1b;
         --color-highlight: lightskyblue;
         --color-menu-background: black;
@@ -20,8 +23,8 @@
 }
 
 body {
-    background-color: var(--color-background); 
-    color: var(--color-primary); 
+    background-color: var(--color-background);
+    color: var(--color-primary);
     /* font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; */
     font: 18px "Lucida Grande", "Lucida Sans Unicode", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
@@ -82,28 +85,46 @@ header nav ul li {
     }
 }
 
+/* Hero and subhero */
+
+.hero, .subhero {
+    display: flex;
+    padding: 10px 25px 30px;
+}
+
 /* Hero */
 
 .hero {
-    display: flex;
     /* flex-direction: column;
     align-items: center; */
     /* justify-content: center; */
     /* padding-top: 150px; */
 
     flex: 1;
+    justify-content: space-evenly;
+}
+
+.hero .text {
+    align-self: flex-end;
+    padding-bottom: 30px;
+}
+
+.hero .text h1 {
+    font-size: 100px;
+    padding-bottom: 20px
+}
+
+.hero p {
+    font-size: 25px;
 }
 
 .hero .logo {
     display: block;
-    width: 144px;
-    height: 144px;
+    width: 400px;
+    height: 400px;
     margin: 8px auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.hero h1 {
-    font-size: 100px;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
 
 @media (max-width: 480px) {
@@ -116,6 +137,16 @@ header nav ul li {
 /* Subhero */
 
 .subhero {
-    display: flex;
+    
+}
 
+.subhero .text {
+    align-self: center;
+    padding-top: 200px;
+}
+
+.subhero .image img {
+    width: 500px;
+    transform: rotate(45deg);
+    /* transform: rotate3d(45, 1, 1, 45deg); */
 }
