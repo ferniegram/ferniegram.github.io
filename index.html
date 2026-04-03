@@ -12,7 +12,7 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/animejs/dist/bundles/anime.umd.js"></script>
-    <script src="https://unpkg.com/flubber@0.3.0"></script>
+    <!-- <script src="https://unpkg.com/flubber@0.3.0"></script> -->
 </head>
 <body>
     <header>
@@ -29,12 +29,13 @@
     </header>
     <div class="hero">
         <div class="text">
+            <object class="logo" data="/images/fernschreiber2-animated.svg"></object>
             <h1>Ferniegram</h1>
             <p>Ferniegram is a <i>better</i> Telegram client for SailfishOS.</p>
         </div>
-        <div class="image">
-            <!-- <div style="background: url(&quot;/images/fernschreiber2-animated.svg&quot;);" alt="Ferniegram logo" class="logo"></div> -->
-            <object class="logo" data="/images/fernschreiber2-animated.svg"></object>
+        <div class="screenshot">
+            <img src="/images/screenshots/1.png" alt="Ferniegram screenshot">
+            <div class="screenshot-inner"></div>
         </div>
         
     </div>
@@ -44,7 +45,6 @@
             <p>Ferniegram does not try to reinvent the wheel. Instead, it continues the development of Fernschreiber, combining the <b>stability</b> with the <b>rich functionality</b> of modern Telegram.</p>
         </div>
         <div class="image">
-            <!-- <img src="/images/screenshots/1.png" alt=""> -->
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 240"
@@ -54,45 +54,37 @@
                         <stop offset="0" stop-color="#1d93d2"/>
                         <stop offset="1" stop-color="#38b0e3"/>
                     </linearGradient>
-                    <linearGradient id="Oval_1_" gradientUnits="userSpaceOnUse" x1="-838.041" y1="660.581" x2="-838.041" y2="660.3427" gradientTransform="matrix(1000 0 0 -1000 838161 660581)">
-                        <stop offset="0" style="stop-color:#2AABEE"/>
-                        <stop offset="1" style="stop-color:#229ED9"/>
-                    </linearGradient>
-
-                    <path id="telegram-logo-target" d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2 c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3 c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3 c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8 c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z"/>
                 </defs>
                 <circle cx="120" cy="120" r="120" fill="url(#linear-gradient)"/>
                 <path id="telegram-logo-inner2" d="M81.229,128.772l14.237,39.406s1.78,3.687,3.686,3.687,30.255-29.492,30.255-29.492l31.525-60.89L81.737,118.6Z" fill="#c8daea"/>
                 <path id="telegram-logo-inner1" d="M100.106,138.878l-2.733,29.046s-1.144,8.9,7.754,0,17.415-15.763,17.415-15.763" fill="#a9c6d8"/>
                 <path id="telegram-logo" d="M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766,0,0,1,1.885,2.055,9.357,9.357,0,0,1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13,0,0,1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27,0,0,1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21,0,0,1,81.486,130.178Z" fill="#fff"/>
+                <path id="telegram-logo-target" fill="#fff" style="transform: rotate(180deg);" d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2 c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3 c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3 c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8 c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z"/>
             </svg>
 
             <script>
-                const interpolator = flubber.interpolate(
-                    document.querySelector('#telegram-logo').getAttribute('d'),
-                    document.querySelector('#telegram-logo-target').getAttribute('d')
-                )
+                function logoTargetAnim() {
+                    anime.createTimeline({defaults: {
+                        ease: anime.spring({ bounce: .35 }),
+                        duration: 1000
+                    }})
+                    .add('#telegram-logo-target', {
+                        rotate: 0
+                    })
+                }
 
-                const tl = anime.createTimeline({defaults: {
-                    ease: 'inOutQuart',
-                    duration: 1000
-                }});
-
-                tl
-                .add(['#telegram-logo-inner1', '#telegram-logo-inner2'], {
-                    opacity: 0,
-                    //scale: 0,
-                    //transformOrigin: '50% 50%'
-                })
-                .add('#telegram-logo', {
-                    translateZ: 0,
-                    onUpdate: function(anim) {
-                        document.querySelector('#telegram-logo').setAttribute('d', interpolator(anim.progress));
-                    },
-                    //points: anime.svg.morphTo('#telegram-logo-target'),
+                anime.createTimeline({defaults: {
+                    ease: 'inOutExpo',//'inOutQuad',//anime.spring({ bounce: .35 }),
+                    duration: 500
+                }})
+                .add(['#telegram-logo', '#telegram-logo-inner1', '#telegram-logo-inner2'], {
+                    rotate: -70,
+                    onComplete: logoTargetAnim
                 }, 0)
                 .add('#linear-gradient stop', {
                     'stop-color': function(el, i) {
+                        //return [el.getAttribute('stop-color'), i === 0 ? '#2AABEE' : '#229ED9'];
+                        //return i === 0 ? ['#1d93d2', '#2AABEE'] : ['#38b0e3', '#229ED9'];
                         return i === 0 ? '#2AABEE' : '#229ED9';
                     }
                 }, 0);

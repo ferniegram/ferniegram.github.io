@@ -10,6 +10,7 @@
     --color-background: #fff;
     --color-highlight: aqua;
     --color-menu-background: gray;
+    --color-screenshot-border: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,6 +20,7 @@
         --color-background: #181a1b;
         --color-highlight: lightskyblue;
         --color-menu-background: black;
+        --color-screenshot-border: white;
     }
 }
 
@@ -89,7 +91,7 @@ header nav ul li {
 
 .hero, .subhero {
     display: flex;
-    padding: 10px 25px 30px;
+    padding: 20px 25px 30px;
 }
 
 /* Hero */
@@ -105,7 +107,7 @@ header nav ul li {
 }
 
 .hero .text {
-    align-self: flex-end;
+    align-self: center;
     padding-bottom: 30px;
 }
 
@@ -125,6 +127,17 @@ header nav ul li {
     margin: 8px auto;
     /* background-repeat: no-repeat;
     background-size: cover; */
+}
+
+.hero .screenshot {
+    width: 500px;
+    border: 10px solid var(--color-screenshot-border);
+    border-radius: 5px;
+    /* transform: rotate(15deg); */
+}
+
+.hero .screenshot img {
+    width: 100%;
 }
 
 @media (max-width: 480px) {
