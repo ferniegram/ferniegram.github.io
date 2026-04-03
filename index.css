@@ -11,6 +11,8 @@
     --color-highlight: aqua;
     --color-menu-background: gray;
     --color-screenshot-border: black;
+
+    --color-screenshot-shadow: rgba(227, 227, 14, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -129,15 +131,36 @@ header nav ul li {
     background-size: cover; */
 }
 
-.hero .screenshot {
+/*.hero .screenshot {
     width: 500px;
     border: 10px solid var(--color-screenshot-border);
     border-radius: 5px;
-    /* transform: rotate(15deg); */
+    /* transform: rotate(15deg); /
+}*/
+/*
+.hero .screenshot img {
+    width: 100%;
+    /* border: 10px solid; /
+    border-radius: 5px;
+    border-image: 
+        conic-gradient(var(--color-screenshot-border) 0 0) /* border color /
+        fill 5//5px; /* border thickness /
+}*/
+
+.hero .screenshot {
+    width: 500px;
+    padding: 8px; /* border thickness */
+    background-color: var(--color-screenshot-border); /* border color */
+    border-radius: 40px; /* outer border radius */
+    display: inline-block;
+    line-height: 0; /* prevents extra space below the image */
+    box-shadow: 50px 50px 100px var(--color-screenshot-shadow);
 }
 
 .hero .screenshot img {
     width: 100%;
+    border-radius: 40px; /* inner border radius */
+    display: block;
 }
 
 @media (max-width: 480px) {
