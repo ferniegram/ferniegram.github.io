@@ -8,8 +8,9 @@
     --color-primary: #000;
     --color-secondary: #aeaeae;
     --color-background: #fff;
-    --color-highlight: aqua;
-    --color-menu-background: gray;
+    --color-highlight: cornflowerblue;
+    --color-menu-background: dodgerblue;
+    --color-menu-primary: white;
     --color-screenshot-border: black;
 
     --color-screenshot-shadow: rgba(227, 227, 14, 0.3);
@@ -21,7 +22,8 @@
         --color-secondary: #aeaeae;
         --color-background: #181a1b;
         --color-highlight: lightskyblue;
-        --color-menu-background: black;
+        --color-menu-background: midnightblue;
+        --color-menu-primary: white;
         --color-screenshot-border: white;
     }
 }
@@ -49,6 +51,11 @@ a, a:hover {
 /* Header */
 
 header {
+    --color-highlight: aliceblue;
+    --color-highlight-hover: lightblue;
+}
+
+header {
     width: 100%;
     padding: 10px 15px;
     display: flex;
@@ -60,7 +67,7 @@ header {
 header .name {
     font-size: 40px;
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--color-menu-primary);
 }
 
 header img.logo {
