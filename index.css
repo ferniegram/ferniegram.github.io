@@ -179,22 +179,18 @@ header nav ul li {
 
 /* Subhero */
 
-.subhero {
-    
-}
-
 .subhero .text {
     align-self: center;
     padding-top: 200px;
 }
 
-.subhero .image img {
-    width: 500px;
-    transform: rotate(45deg);
-    /* transform: rotate3d(45, 1, 1, 45deg); */
+.subhero .image {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-#fernschreiber-to-ferniegram-logo {
-    width: 500px;
-    height: 500px;
+.subhero .image img, .subhero .image svg, .subhero .image object {
+    width: 250px;
+    height: 250px;
 }
