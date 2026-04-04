@@ -4,16 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --color-primary: #000;
     --color-secondary: darkslategray;
     --color-background: #fff;
-    --color-highlight: cornflowerblue;
+    --color-highlight: #0c3fe5;
+    --color-highlight-hover: #2150eb;
     --color-menu-background: linear-gradient(to bottom left, #214fec, #459ce7 95.918399%, #45c9e7 100%);
     --color-menu-primary: white;
     --color-screenshot-border: black;
-
     --color-screenshot-shadow: rgba(227, 227, 14, 0.3);
+    --color-timeline-arrow: linear-gradient(to right, skyblue, cornflowerblue 75%, dodgerblue 99%);
+    --color-timeline-arrow-end: dodgerblue;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +28,7 @@
         --color-secondary: #aeaeae;
         --color-background: #181a1b;
         --color-highlight: lightskyblue;
+        --color-highlight-hover: lightblue;
         --color-menu-background: linear-gradient(to bottom right, #163ec0, #387db9 95.918399%, #2f96ad 100%);
         --color-menu-primary: white;
         --color-screenshot-border: white;
@@ -101,11 +108,14 @@ header nav ul li {
     }
 }
 
-/* Hero and subhero */
+/* Hero and subhero (misc) */
+
+.hero, .subhero, .container {
+    padding: 20px 25px 30px;
+}
 
 .hero, .subhero {
     display: flex;
-    padding: 20px 25px 30px;
 }
 
 @media (max-width: 800px) {
@@ -206,6 +216,10 @@ header nav ul li {
     width: 100%;
 }
 
+.subhero .text h1 {
+    padding-bottom: 10px;
+}
+
 .subhero .image {
     display: flex;
     justify-content: space-evenly;
@@ -278,4 +292,73 @@ footer h2 {
 
 footer p {
     color: var(--color-secondary);
+}
+
+/* Timeline */
+
+.timeline-container h1 {
+    padding-bottom: 20px;
+}
+
+.timeline {
+    overflow-x: auto;
+}
+
+.timeline-content {
+    display: inline flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.timeline .items-wrapper {
+    display: inline flex;
+}
+
+.timeline .item {
+    margin: 0 25px;
+}
+
+.timeline .item img {
+    width: 200px;
+    height: 200px;
+}
+
+.timeline .item h4 {
+    font-weight: 100;
+}
+
+.timeline .item.highlighted h3 {
+    color: var(--color-highlight);
+}
+
+.timeline .item.highlighted h4 {
+    color: var(--color-highlight-hover);
+}
+
+.timeline-arrow {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-arrow .rectangle {
+    width: 100%;
+    height: 20px;
+    border-radius: 5px;
+    background: var(--color-timeline-arrow);
+}
+
+.timeline-arrow .arrow-right {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    stroke: var(--color-timeline-arrow-end);
+    fill: var(--color-timeline-arrow-end);
+    margin-left: -25px;
+}
+
+#apps-timeline .timeline-arrow {
+    width: 84%;
 }

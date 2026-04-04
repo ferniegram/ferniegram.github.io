@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 17.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg
+   version="1.1"
+   x="0px"
+   y="0px"
+   width="86px"
+   height="86px"
+   viewBox="0 0 86 86"
+   enable-background="new 0 0 86 86"
+   xml:space="preserve"
+   id="svg4"
+   sodipodi:docname="harbour-jollagram.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs4"><linearGradient
+     id="linearGradient4"
+     inkscape:collect="always"><stop
+       style="stop-color:#064776;stop-opacity:1;"
+       offset="0"
+       id="stop4" /><stop
+       style="stop-color:#0a75c2;stop-opacity:1;"
+       offset="1"
+       id="stop5" /></linearGradient><linearGradient
+     inkscape:collect="always"
+     xlink:href="#linearGradient4"
+     id="linearGradient5"
+     x1="42.5"
+     y1="80"
+     x2="42.5"
+     y2="5"
+     gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
+   id="namedview4"
+   pagecolor="#000000"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="9.3023256"
+   inkscape:cx="42.94625"
+   inkscape:cy="43"
+   inkscape:window-width="1920"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="0"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="g5" />
+
+<g
+   id="Layer_1">
+	<linearGradient
+   id="SVGID_1_"
+   gradientUnits="userSpaceOnUse"
+   x1="85.2829"
+   y1="0.7172"
+   x2="12.8066"
+   y2="73.1935">
+		<stop
+   offset="0"
+   style="stop-color:#008075"
+   id="stop1" />
+		<stop
+   offset="1"
+   style="stop-color:#00BFAF"
+   id="stop2" />
+	</linearGradient>
+	<path
+   fill="url(#SVGID_1_)"
+   d="M85.7,1.723c0-0.786-0.637-1.423-1.423-1.423c0,0-40.641,0-41.276,0C19.417,0.3,0.3,19.417,0.3,43   c0,23.582,19.117,42.7,42.7,42.7S85.7,66.582,85.7,43C85.7,42.364,85.7,1.723,85.7,1.723z"
+   id="path2"
+   style="fill:#ffffff;fill-opacity:1" />
+	<path
+   fill="#e3f1bc"
+   d="M 42.500589,80 C 21.822144,80 5,63.17812 5,42.5 5,21.82188 21.822144,5 42.500589,5 H 80 V 42.5 C 80,63.17812 63.177856,80 42.500589,80 Z"
+   id="path3"
+   style="stroke-width:1.17785;fill:url(#linearGradient5)" />
+	
+<g
+   id="g5"
+   transform="matrix(0.35472869,0,0,0.3645916,24.804031,28.645916)"><path
+     d="m 9.625591,50.944766 14.237,39.406 c 0,0 1.78,3.687 3.686,3.687 1.906,0 30.255,-29.492 30.255,-29.492 l 31.525,-60.89 -79.195,37.117 z"
+     fill="#c8daea"
+     id="path2-3" /><path
+     d="m 28.502591,61.050766 -2.733,29.046 c 0,0 -1.144,8.9 7.754,0 8.898,-8.9 17.415,-15.763 17.415,-15.763"
+     fill="#a9c6d8"
+     id="path3-6" /><path
+     d="m 9.882591,52.350766 -29.286,-9.542 c 0,0 -3.5,-1.42 -2.373,-4.64 0.232,-0.664 0.7,-1.229 2.1,-2.2 6.489,-4.523 120.105999,-45.36 120.105999,-45.36 0,0 3.208,-1.081 5.1,-0.362 a 2.766,2.766 0 0 1 1.885,2.055 9.357,9.357 0 0 1 0.254,2.585 c -0.009,0.752 -0.1,1.449 -0.169,2.542 -0.692,11.165 -21.399999,94.493 -21.399999,94.493 0,0 -1.239,4.876 -5.678,5.043 a 8.13,8.13 0 0 1 -5.925,-2.292 c -8.711,-7.493 -38.819,-27.727 -45.472,-32.177 a 1.27,1.27 0 0 1 -0.546,-0.9 c -0.093,-0.469 0.417,-1.05 0.417,-1.05 0,0 52.426,-46.6 53.821,-51.492 0.108,-0.379 -0.3,-0.566 -0.848,-0.4 -3.482,1.281 -63.844,39.4 -70.506,43.607 a 3.21,3.21 0 0 1 -1.48,0.09 z"
+     fill="#ffffff"
+     id="path4" /></g></g>
+</svg>
