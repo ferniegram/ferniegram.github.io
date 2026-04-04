@@ -7,9 +7,11 @@
     <title>Ferniegram</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/static/index.css">
 
     <script src="/static/anime.umd.min.js"></script>
+
+    <script src="/static/why-animation.js"></script>
 </head>
 <body>
     <header>
@@ -41,110 +43,8 @@
             <p>Ferniegram does not try to reinvent the wheel. Instead, it continues the development of Fernschreiber, combining the <b>stability</b> with the <b>rich functionality</b> of modern Telegram.</p>
         </div>
         <div class="image">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 240"
-                width="240px" height="240px">
-                <defs>
-                    <linearGradient id="linear-gradient" x1="120" y1="240" x2="120" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#1d93d2"/>
-                        <stop offset="1" stop-color="#38b0e3"/>
-                    </linearGradient>
-                </defs>
-                <circle cx="120" cy="120" r="120" fill="url(#linear-gradient)"/>
-                <path id="telegram-logo-inner2" d="M81.229,128.772l14.237,39.406s1.78,3.687,3.686,3.687,30.255-29.492,30.255-29.492l31.525-60.89L81.737,118.6Z" fill="#c8daea"/>
-                <path id="telegram-logo-inner1" d="M100.106,138.878l-2.733,29.046s-1.144,8.9,7.754,0,17.415-15.763,17.415-15.763" fill="#a9c6d8"/>
-                <path id="telegram-logo" d="M81.486,130.178,52.2,120.636s-3.5-1.42-2.373-4.64c.232-.664.7-1.229,2.1-2.2,6.489-4.523,120.106-45.36,120.106-45.36s3.208-1.081,5.1-.362a2.766,2.766,0,0,1,1.885,2.055,9.357,9.357,0,0,1,.254,2.585c-.009.752-.1,1.449-.169,2.542-.692,11.165-21.4,94.493-21.4,94.493s-1.239,4.876-5.678,5.043A8.13,8.13,0,0,1,146.1,172.5c-8.711-7.493-38.819-27.727-45.472-32.177a1.27,1.27,0,0,1-.546-.9c-.093-.469.417-1.05.417-1.05s52.426-46.6,53.821-51.492c.108-.379-.3-.566-.848-.4-3.482,1.281-63.844,39.4-70.506,43.607A3.21,3.21,0,0,1,81.486,130.178Z" fill="#fff"/>
-                <path id="telegram-logo-target" fill="#fff" style="transform: rotate(180deg);" d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2 c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3 c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3 c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8 c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z"/>
-            </svg>
-
+            <object id="telegram-logo" data="/images/telegram.svg" onload="setupWhyAnimation()"></object>
             <object id="fernschreiber-to-ferniegram-logo" data="/images/fernschreiber-to-ferniegram.svg"></object>
-
-            <script>
-                function logoTargetAnim() {
-                    anime.createTimeline({
-                        defaults: {
-                            ease: anime.spring({ bounce: .35 }),
-                            duration: 1000,
-                        }
-                    })
-                    .add('#telegram-logo-target', {
-                        rotate: 0,
-                        onCompleted: fernschreiberToFerniegramAnim
-                    }, 0)
-                    .add('#linear-gradient stop', {
-                        'stop-color': (el, i) => {
-                            return i === 0 ? '#2AABEE' : '#229ED9';
-                        }
-                    }, 0);
-                }
-
-                anime.animate('#telegram-logo, #telegram-logo-inner1, #telegram-logo-inner2', {
-                    ease: 'inOutExpo',
-                    duration: 500,
-                    delay: 1000,
-                    rotate: -70,
-                    onComplete: () => {
-                        document.querySelectorAll('#telegram-logo, #telegram-logo-inner1, #telegram-logo-inner2').forEach(el => el.remove())
-                        logoTargetAnim();
-                    },
-                    autoplay: anime.onScroll({container: 'body'})
-                });
-
-                function fernschreiberToFerniegramAnim() {
-                    const doc = document.querySelector('#fernschreiber-to-ferniegram-logo').contentDocument;
-
-                    // for some reason, you can't pass doc.querySelectorAll(whatever) as a target
-                    // and need to do [...doc.querySelectorAll(whatever)]
-
-                    const tl = anime.createTimeline({
-                        defaults: {
-                            ease: 'in',//anime.spring({ bounce: .35 }),
-                            duration: 1000,
-                        },
-                        delay: 1000
-                    });
-
-                    tl
-                    .add([...doc.querySelectorAll('#linearGradient30 stop')], {
-                        'stop-color': (el, i) =>
-                            ['#214fec', '#459ce7', '#45c9e7'][i]
-                    }, 0)
-                    .add(doc.querySelector('#linearGradient30'), {
-                        // TODO
-                        /*keyframes: [
-                            {x1: 0},
-                            {x1: 1},
-                            //{x1: 0},
-                        ]*/
-                        //x1: '1'
-                    }, 0)
-                    .add(doc.querySelector('#inner-background'), {
-                        'fill': '#00d5ff'
-                    }, 0);
-                    //.add([...doc.querySelectorAll('.middle-dot')], middleDotAnimation, 0)
-
-                    var delay = 0;
-                    for (const x of ['1, 2', 3, 4, 5, 6, '7, 8']) {
-                        delay += 50;
-                        var elements = [...doc.querySelectorAll(('#mdot' + x).replace(', ', ', #mdot'))];
-                        tl.add(elements, {fill: '#0084ff'}, delay);
-                    }
-
-                    delay = 0;
-                    for (const x of ['15', '11, 25', '12, 14, 35', '21, 22, 24', '32, 34', '31, 42, 13']) {
-                        delay += 50;
-                        var elements = [...doc.querySelectorAll(('#dot' + x).replaceAll(', ', ', #dot'))];
-                        console.log(elements);
-                        tl.add(elements, {
-                            keyframes: {
-                                '50%': {fill: '#0084ff'},
-                                '100%': {fill: '#fffee3'},
-                            }
-                        }, delay);
-                    }
-                }
-            </script>
         </div>
     </div>
     <div class="features" id="features">
