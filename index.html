@@ -79,12 +79,15 @@
                     }, 0);
                 }
 
-                anime.animate(['#telegram-logo', '#telegram-logo-inner1', '#telegram-logo-inner2'], {
+                anime.animate('#telegram-logo, #telegram-logo-inner1, #telegram-logo-inner2', {
                     ease: 'inOutExpo',
                     duration: 500,
                     delay: 1000,
                     rotate: -70,
-                    onComplete: logoTargetAnim,
+                    onComplete: () => {
+                        document.querySelectorAll('#telegram-logo, #telegram-logo-inner1, #telegram-logo-inner2').forEach(el => el.remove())
+                        logoTargetAnim();
+                    },
                     autoplay: anime.onScroll({container: 'body'})
                 });
 
@@ -150,8 +153,8 @@
     </div>
 
     <footer>
-        <h3>Ferniegram</h3>
-        <p>Ferniegram is not affiliated with Telegram or Jolla <!--or Yottagram xD-->.</p>
+        <h2>Ferniegram</h2>
+        <p>Ferniegram is not affiliated with Telegram FZ-LLC, Jolla Mobile Ltd or Jollaboys Oy.</p>
     </footer>
 </body>
 </html>
