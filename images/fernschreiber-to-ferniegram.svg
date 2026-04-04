@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg version="1.1" xml:space="preserve" width="114.66667" height="114.66667" viewBox="0 0 114.66667 114.66667" inkscape:version="1.4 (e7c3feb100, 2024-10-09)" sodipodi:docname="fernschreiber2.svg" id="svg1" inkscape:export-xdpi="210.77284" inkscape:export-ydpi="210.77284"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:zoom="6.5991208" inkscape:cx="47.657864" inkscape:cy="59.098782" inkscape:window-width="1536" inkscape:window-height="955" inkscape:window-x="0" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g67" />
+  <style>
+    .middle-dot {
+      fill: #fffda9; /* #0084ff */
+      fill-opacity: 1;
+      fill-rule: nonzero;
+      stroke: none;
+    }
+
+    .big-dot {
+      fill: #fffee3;
+      fill-opacity: 1;
+      fill-rule: nonzero;
+      stroke: none;
+    }
+
+    #outer-background {
+      fill: url(#linearGradient30);
+      stroke: none;
+      stroke-width: 0.99975002;
+      stroke-dasharray: none;
+    }
+  </style>
+  <defs id="defs1">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath18">
+      <path d="M 0.301,43 C 0.301,42.364 0.3,1.723 0.3,1.723 v 0 C 0.3,0.938 0.938,0.3 1.723,0.3 v 0 H 43 c 23.584,0 42.7,19.117 42.7,42.7 v 0 C 85.7,66.583 66.584,85.7 43,85.7 v 0 C 19.417,85.7 0.301,66.583 0.301,43" inkscape:connector-curvature="0" id="path2" />
+    </clipPath>
+    <linearGradient x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-72.476372,-72.476372,72.476372,-72.476372,73.193359,73.192871)" spreadMethod="pad" id="linearGradient30">
+      <stop stop-color="#ec7221" offset="0"/>
+      <stop stop-color="#e7454c" offset="0.95918399"/>
+      <stop stop-color="#e7454c" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g inkscape:groupmode="layer" inkscape:label="harbour-fernschreiber" transform="matrix(1.3333333,0,0,-1.3333333,0,114.66667)" id="g67">
+    <g id="g18" style="display:inline;stroke-width:0.99975002;stroke-dasharray:none">
+      <g clip-path="url(#clipPath18)" id="g16" style="stroke-width:0.99975002;stroke-dasharray:none">
+        <path d="M 0.301,43 C 0.301,42.364 0.3,1.723 0.3,1.723 v 0 C 0.3,0.938 0.938,0.3 1.723,0.3 v 0 H 43 c 23.584,0 42.7,19.117 42.7,42.7 v 0 C 85.7,66.583 66.584,85.7 43,85.7 v 0 C 19.417,85.7 0.301,66.583 0.301,43" inkscape:connector-curvature="0" id="outer-background" />
+      </g>
+    </g>
+    <g transform="translate(75,43.1621)" id="g20" />
+    <path style="opacity:0.9;fill:#fcba02;fill-opacity:1;stroke-width:0.9930262" d="M 42.700457,74.178768 C 24.766404,74.178768 10.2285,60.954638 10.2285,44.643189 V 15.107611 5.2627488 c 5.978017,0 10.823985,4.255117 10.823985,9.6909432 h 21.647972 c 17.934054,0 32.471954,13.377056 32.471954,29.689497 0,16.311449 -14.5379,29.535579 -32.471954,29.535579 z" id="inner-background" inkscape:connector-curvature="0" />
+    <g id="gmdot1" transform="translate(15.3208,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.592,-1.322 1.323,-1.322 0.732,0 1.324,0.593 1.324,1.322 0,0.73 -0.592,1.322 -1.324,1.322 C 0.592,1.322 0,0.73 0,0" class="middle-dot" id="mdot1" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot2" transform="translate(21.8672,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.591,-1.322 1.321,-1.322 0.732,0 1.323,0.593 1.323,1.322 0,0.73 -0.591,1.322 -1.323,1.322 C 0.591,1.322 0,0.73 0,0" class="middle-dot" id="mdot2" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot3" transform="translate(28.4116,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.591,-1.322 1.323,-1.322 0.729,0 1.321,0.593 1.321,1.322 0,0.73 -0.592,1.322 -1.321,1.322 C 0.591,1.322 0,0.73 0,0" class="middle-dot" id="mdot3" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot4" transform="translate(34.9561,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.592,-1.322 1.323,-1.322 0.73,0 1.321,0.593 1.321,1.322 0,0.73 -0.591,1.322 -1.321,1.322 C 0.592,1.322 0,0.73 0,0" class="middle-dot" id="mdot4" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot5" transform="translate(41.502,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.593,-1.322 1.32,-1.322 0.732,0 1.322,0.593 1.322,1.322 0,0.73 -0.59,1.322 -1.322,1.322 C 0.593,1.322 0,0.73 0,0" class="middle-dot" id="mdot5" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot6" transform="translate(48.0469,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.59,-1.322 1.32,-1.322 0.732,0 1.322,0.593 1.322,1.322 0,0.73 -0.59,1.322 -1.322,1.322 C 0.59,1.322 0,0.73 0,0" class="middle-dot" id="mdot6" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot7" transform="translate(54.5898,45.7656)">
+      <path d="m 0,0 c 0,-0.729 0.594,-1.322 1.32,-1.322 0.735,0 1.326,0.593 1.326,1.322 0,0.73 -0.591,1.322 -1.326,1.322 C 0.594,1.322 0,0.73 0,0" class="middle-dot" id="mdot7" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gmdot8" transform="translate(61.1377,45.7656)" style="stroke-width:0.99975002;stroke-dasharray:none">
+      <path d="m 0,0 c 0,-0.729 0.59,-1.322 1.319,-1.322 0.732,0 1.322,0.593 1.322,1.322 0,0.73 -0.59,1.322 -1.322,1.322 C 0.59,1.322 0,0.73 0,0" class="middle-dot" id="mdot8" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot15" transform="translate(14,26.1348)">
+      <path d="m 0,0 c 0,-1.465 1.184,-2.646 2.644,-2.646 1.461,0 2.645,1.181 2.645,2.646 0,1.459 -1.184,2.641 -2.645,2.641 C 1.184,2.641 0,1.459 0,0" class="big-dot" id="dot15" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot11" transform="translate(20.5444,58.856)">
+      <path d="m 0,0 c 0,-1.462 1.185,-2.645 2.644,-2.645 1.461,0 2.645,1.183 2.645,2.645 0,1.459 -1.184,2.644 -2.645,2.644 C 1.185,2.644 0,1.459 0,0" class="big-dot" id="dot11" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot12" transform="translate(27.0894,52.3101)">
+      <path d="m 0,0 c 0,-1.461 1.185,-2.644 2.645,-2.644 1.461,0 2.644,1.183 2.644,2.644 0,1.46 -1.183,2.645 -2.644,2.645 C 1.185,2.645 0,1.46 0,0" class="big-dot" id="dot12" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot25" transform="translate(27.0894,26.1348)">
+      <path d="m 0,0 c 0,-1.465 1.185,-2.646 2.645,-2.646 1.461,0 2.644,1.181 2.644,2.646 0,1.459 -1.183,2.641 -2.644,2.641 C 1.185,2.641 0,1.459 0,0" class="big-dot" id="dot25" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot21" transform="translate(33.6338,58.856)" inkscape:label="g94">
+      <path d="M 0,0 C 0,-1.462 1.184,-2.645 2.646,-2.645 4.106,-2.645 5.29,-1.462 5.29,0 5.29,1.459 4.106,2.644 2.646,2.644 1.184,2.644 0,1.459 0,0" class="big-dot" id="dot21" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot22" transform="translate(40.1758,52.3101)">
+      <path d="m 0,0 c 0,-1.461 1.187,-2.644 2.646,-2.644 1.461,0 2.648,1.183 2.648,2.644 0,1.46 -1.187,2.645 -2.648,2.645 C 1.187,2.645 0,1.46 0,0" class="big-dot" id="dot22" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot14" transform="translate(40.1758,32.6768)">
+      <path d="m 0,0 c 0,-1.458 1.187,-2.646 2.646,-2.646 1.461,0 2.648,1.188 2.648,2.646 0,1.459 -1.187,2.645 -2.648,2.645 C 1.187,2.645 0,1.459 0,0" class="big-dot" id="dot14" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot35" transform="translate(40.1758,26.1348)">
+      <path d="m 0,0 c 0,-1.465 1.187,-2.646 2.646,-2.646 1.461,0 2.648,1.181 2.648,2.646 0,1.459 -1.187,2.641 -2.648,2.641 C 1.187,2.641 0,1.459 0,0" class="big-dot" id="dot35" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot32" transform="translate(46.7236,52.3101)">
+      <path d="m 0,0 c 0,-1.461 1.184,-2.644 2.644,-2.644 1.461,0 2.645,1.183 2.645,2.644 0,1.46 -1.184,2.645 -2.645,2.645 C 1.184,2.645 0,1.46 0,0" class="big-dot" id="dot32" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot24" transform="translate(46.7236,32.6768)">
+      <path d="m 0,0 c 0,-1.458 1.184,-2.646 2.644,-2.646 1.461,0 2.645,1.188 2.645,2.646 0,1.459 -1.184,2.645 -2.645,2.645 C 1.184,2.645 0,1.459 0,0" class="big-dot" id="dot24" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot31" transform="translate(53.2686,58.856)">
+      <path d="m 0,0 c 0,-1.462 1.183,-2.645 2.643,-2.645 1.461,0 2.645,1.183 2.645,2.645 0,1.459 -1.184,2.644 -2.645,2.644 C 1.183,2.644 0,1.459 0,0" class="big-dot" id="dot31" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot42" transform="translate(53.2686,52.3101)">
+      <path d="m 0,0 c 0,-1.461 1.183,-2.644 2.643,-2.644 1.461,0 2.645,1.183 2.645,2.644 0,1.46 -1.184,2.645 -2.645,2.645 C 1.183,2.645 0,1.46 0,0" class="big-dot" id="dot42" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot13" transform="translate(59.8135,39.2217)">
+      <path d="m 0,0 c 0,-1.459 1.187,-2.646 2.644,-2.646 1.461,0 2.644,1.187 2.644,2.646 0,1.459 -1.183,2.646 -2.644,2.646 C 1.187,2.646 0,1.459 0,0" class="big-dot" id="dot13" inkscape:connector-curvature="0" />
+    </g>
+    <g id="gdot34" transform="translate(59.8135,32.6768)">
+      <path d="m 0,0 c 0,-1.458 1.187,-2.646 2.644,-2.646 1.461,0 2.644,1.188 2.644,2.646 0,1.459 -1.183,2.645 -2.644,2.645 C 1.187,2.645 0,1.459 0,0" class="big-dot" id="dot34" inkscape:connector-curvature="0" />
+    </g>
+  </g>
+</svg>

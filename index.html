@@ -61,32 +61,88 @@
                 <path id="telegram-logo-target" fill="#fff" style="transform: rotate(180deg);" d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2 c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3 c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3 c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8 c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z"/>
             </svg>
 
+            <object id="fernschreiber-to-ferniegram-logo" data="/images/fernschreiber-to-ferniegram.svg"></object>
+
             <script>
                 function logoTargetAnim() {
-                    anime.createTimeline({defaults: {
-                        ease: anime.spring({ bounce: .35 }),
-                        duration: 1000
-                    }})
-                    .add('#telegram-logo-target', {
-                        rotate: 0
+                    anime.createTimeline({
+                        defaults: {
+                            ease: anime.spring({ bounce: .35 }),
+                            duration: 1000,
+                        }
                     })
+                    .add('#telegram-logo-target', {
+                        rotate: 0,
+                        onCompleted: fernschreiberToFerniegramAnim
+                    }, 0)
+                    .add('#linear-gradient stop', {
+                        'stop-color': (el, i) => {
+                            return i === 0 ? '#2AABEE' : '#229ED9';
+                        }
+                    }, 0);
                 }
 
-                anime.createTimeline({defaults: {
-                    ease: 'inOutExpo',//'inOutQuad',//anime.spring({ bounce: .35 }),
-                    duration: 500
-                }})
-                .add(['#telegram-logo', '#telegram-logo-inner1', '#telegram-logo-inner2'], {
+                anime.animate(['#telegram-logo', '#telegram-logo-inner1', '#telegram-logo-inner2'], {
+                    ease: 'inOutExpo',
+                    duration: 500,
+                    delay: 2000,
                     rotate: -70,
                     onComplete: logoTargetAnim
-                }, 0)
-                .add('#linear-gradient stop', {
-                    'stop-color': function(el, i) {
-                        //return [el.getAttribute('stop-color'), i === 0 ? '#2AABEE' : '#229ED9'];
-                        //return i === 0 ? ['#1d93d2', '#2AABEE'] : ['#38b0e3', '#229ED9'];
-                        return i === 0 ? '#2AABEE' : '#229ED9';
+                });
+
+                function fernschreiberToFerniegramAnim() {
+                    const doc = document.querySelector('#fernschreiber-to-ferniegram-logo').contentDocument;
+
+                    // for some reason, you can't pass doc.querySelectorAll(whatever) as a target
+                    // and need to do [...doc.querySelectorAll(whatever)]
+
+                    const tl = anime.createTimeline({
+                        defaults: {
+                            ease: 'in',//anime.spring({ bounce: .35 }),
+                            duration: 1000,
+                        },
+                        delay: 1000
+                    });
+
+                    tl
+                    .add([...doc.querySelectorAll('#linearGradient30 stop')], {
+                        'stop-color': (el, i) =>
+                            ['#214fec', '#459ce7', '#45c9e7'][i]
+                    }, 0)
+                    .add(doc.querySelector('#linearGradient30'), {
+                        // TODO
+                        /*keyframes: [
+                            {x1: 0},
+                            {x1: 1},
+                            //{x1: 0},
+                        ]*/
+                        //x1: '1'
+                    }, 0)
+                    .add(doc.querySelector('#inner-background'), {
+                        'fill': '#00d5ff'
+                    }, 0);
+                    //.add([...doc.querySelectorAll('.middle-dot')], middleDotAnimation, 0)
+
+                    var delay = 0;
+                    for (const x of ['1, 2', 3, 4, 5, 6, '7, 8']) {
+                        delay += 50;
+                        var elements = [...doc.querySelectorAll(('#mdot' + x).replace(', ', ', #mdot'))];
+                        tl.add(elements, {fill: '#0084ff'}, delay);
                     }
-                }, 0);
+
+                    delay = 0;
+                    for (const x of ['15', '11, 25', '12, 14, 35', '21, 22, 24', '32, 34', '31, 42, 13']) {
+                        delay += 50;
+                        var elements = [...doc.querySelectorAll(('#dot' + x).replaceAll(', ', ', #dot'))];
+                        console.log(elements);
+                        tl.add(elements, {
+                            keyframes: {
+                                '50%': {fill: '#0084ff'},
+                                '100%': {fill: '#fffee3'},
+                            }
+                        }, delay);
+                    }
+                }
             </script>
         </div>
     </div>

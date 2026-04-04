@@ -193,3 +193,8 @@ header nav ul li {
     transform: rotate(45deg);
     /* transform: rotate3d(45, 1, 1, 45deg); */
 }
+
+#fernschreiber-to-ferniegram-logo {
+    width: 500px;
+    height: 500px;
+}
