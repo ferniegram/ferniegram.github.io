@@ -1,3 +1,5 @@
+// FIXME: ideally this should be a single timeline
+
 function logoTargetAnim(tgDoc) {
     anime.createTimeline({
         defaults: {
@@ -16,8 +18,14 @@ function logoTargetAnim(tgDoc) {
     }, 0);
 }
 
+var whyAnimationSetup = false;
+
 function setupWhyAnimation() {
-    const tgDoc = document.querySelector('#telegram-logo').contentDocument;
+    if (whyAnimationSetup) return;
+    whyAnimationSetup = true;
+
+    const tgLogo = document.querySelector('#telegram-logo');
+    const tgDoc = tgLogo.contentDocument;
     var telegramOldLogoElements = tgDoc.querySelectorAll('#telegram-logo, #telegram-logo-inner1, #telegram-logo-inner2');
 
     anime.animate([...telegramOldLogoElements], {
@@ -29,7 +37,11 @@ function setupWhyAnimation() {
             telegramOldLogoElements.forEach(el => el.remove())
             logoTargetAnim(tgDoc);
         },
-        autoplay: anime.onScroll({container: 'body'})
+        autoplay: anime.onScroll({
+            container: 'body',
+            target: tgLogo,
+            // debug: true
+        })
     });
 }
 
@@ -41,7 +53,7 @@ function fernschreiberToFerniegramAnim() {
 
     const tl = anime.createTimeline({
         defaults: {
-            ease: 'in',//anime.spring({ bounce: .35 }),
+            ease: 'inOut',//anime.spring({ bounce: .35 }),
             duration: 1000,
         },
         delay: 1000
@@ -52,19 +64,9 @@ function fernschreiberToFerniegramAnim() {
         'stop-color': (el, i) =>
             ['#214fec', '#459ce7', '#45c9e7'][i]
     }, 0)
-    .add(doc.querySelector('#linearGradient30'), {
-        // TODO
-        /*keyframes: [
-            {x1: 0},
-            {x1: 1},
-            //{x1: 0},
-        ]*/
-        //x1: '1'
-    }, 0)
     .add(doc.querySelector('#inner-background'), {
         'fill': '#00d5ff'
     }, 0);
-    //.add([...doc.querySelectorAll('.middle-dot')], middleDotAnimation, 0)
 
     var delay = 0;
     for (const x of ['1, 2', 3, 4, 5, 6, '7, 8']) {

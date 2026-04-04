@@ -13,7 +13,7 @@
 
     <script src="/static/why-animation.js"></script>
 </head>
-<body>
+<body onload="setupWhyAnimation()">
     <header>
         <a href="/" class="name">
             <img class="logo" src="/images/fernschreiber2.svg" alt="Ferniegram logo">
@@ -44,7 +44,7 @@
             <p>Ferniegram does not try to reinvent the wheel. Instead, it continues the development of Fernschreiber, combining the <b>stability</b> with the <b>rich functionality</b> of modern Telegram.</p>
         </div>
         <div class="image">
-            <object id="telegram-logo" data="/images/telegram.svg" onload="setupWhyAnimation()"></object>
+            <object id="telegram-logo" data="/images/telegram.svg"></object>
             <object id="fernschreiber-to-ferniegram-logo" data="/images/fernschreiber.svg"></object>
         </div>
     </div>
