@@ -9,7 +9,7 @@
     --color-secondary: darkslategray;
     --color-background: #fff;
     --color-highlight: cornflowerblue;
-    --color-menu-background: dodgerblue;
+    --color-menu-background: linear-gradient(to bottom left, #214fec, #459ce7 95.918399%, #45c9e7 100%);
     --color-menu-primary: white;
     --color-screenshot-border: black;
 
@@ -22,7 +22,7 @@
         --color-secondary: #aeaeae;
         --color-background: #181a1b;
         --color-highlight: lightskyblue;
-        --color-menu-background: midnightblue;
+        --color-menu-background: linear-gradient(to bottom right, #163ec0, #387db9 95.918399%, #2f96ad 100%);
         --color-menu-primary: white;
         --color-screenshot-border: white;
     }
@@ -61,7 +61,7 @@ header {
     display: flex;
     /* justify-content: flex-end;
     align-items: center; */
-    background-color: var(--color-menu-background);
+    background: var(--color-menu-background);
 }
 
 header .name {
@@ -90,9 +90,14 @@ header nav ul li {
     margin: 0 10px;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 630px) {
     header {
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-left: 0;
+        padding-right: 0;
     }
 }
 
