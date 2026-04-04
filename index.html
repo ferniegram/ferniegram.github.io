@@ -85,9 +85,10 @@
                 anime.animate(['#telegram-logo', '#telegram-logo-inner1', '#telegram-logo-inner2'], {
                     ease: 'inOutExpo',
                     duration: 500,
-                    delay: 2000,
+                    delay: 1000,
                     rotate: -70,
-                    onComplete: logoTargetAnim
+                    onComplete: logoTargetAnim,
+                    autoplay: anime.onScroll({container: 'body'})
                 });
 
                 function fernschreiberToFerniegramAnim() {
