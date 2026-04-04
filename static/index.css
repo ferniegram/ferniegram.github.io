@@ -20,6 +20,8 @@ html {
     --color-screenshot-shadow: rgba(227, 227, 14, 0.3);
     --color-timeline-arrow: linear-gradient(to right, skyblue, cornflowerblue 75%, dodgerblue 99%);
     --color-timeline-arrow-end: dodgerblue;
+    --color-conclusion: deepskyblue;
+    --color-conclusion-description: dodgerblue;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -279,6 +281,7 @@ header nav ul li {
 /* Footer */
 
 footer {
+    padding: 0 10px;
     padding-bottom: 25px;
 }
 
@@ -361,4 +364,20 @@ footer p {
 
 #apps-timeline .timeline-arrow {
     width: 84%;
+}
+
+/* Conclusion */
+
+.conclusion {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.conclusion h1 {
+    color: var(--color-conclusion);
+    padding-bottom: 20px;
+}
+
+.conclusion h2 {
+    color: var(--color-conclusion-description);
 }
