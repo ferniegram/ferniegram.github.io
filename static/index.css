@@ -299,8 +299,12 @@ footer p {
 
 /* Timeline */
 
-.timeline-container h1 {
-    padding-bottom: 20px;
+.timeline-container .text {
+    padding-bottom: 25px;
+}
+
+.timeline-container .text h1 {
+    padding-bottom: 10px;
 }
 
 .timeline {
