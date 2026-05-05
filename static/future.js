@@ -5,6 +5,8 @@ function triggerFuture() {
     const future = document.querySelector('#future');
     future.parentNode.appendChild(future);
     future.querySelector('h4').textContent = "Future";
+
+    document.querySelector('.item.highlighted h4').textContent += " (Present)";
 }
 
 function handleKeydown(e) {
