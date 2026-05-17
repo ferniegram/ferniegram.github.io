@@ -18,7 +18,7 @@ function handleKeydown(e) {
             futureBuffer = futureBuffer.slice(-FUTURE.length);
 
         if (futureBuffer == FUTURE) {
-            removeEventListener('keydown', handleKeydown);
+            document.removeEventListener('keydown', handleKeydown);
             triggerFuture();
         }
     }
