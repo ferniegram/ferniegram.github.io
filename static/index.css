@@ -116,7 +116,7 @@ header nav ul li {
 
 .hero .screenshot img {
     width: 100%;
-    aspect-ratio: 1/2;
+    aspect-ratio: 9/16;
     border-radius: 40px; /* inner border radius */
     display: block;
 }
