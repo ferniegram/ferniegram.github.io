@@ -87,14 +87,17 @@ function fernschreiberToYastAnim() {
         }, delay);
     }
 
+    const yastYDelay = 900;
     tl.add(doc.querySelector('.yast-y'), {
         ease: anime.spring({ bounce: .35 }),
         duration: 250,
-        translateY: 0
-    }, 1000);
+        translateX: 0,
+        translateY: 0,
+        // rotate: 0
+    }, yastYDelay);
     tl.add(doc.querySelector('#text1'), {
         duration: 450,
         ease: 'inOutQubic',
         clipPath: 'inset(-10px -10px -10px -10px)'
-    }, 1300);
+    }, yastYDelay+290);
 }
