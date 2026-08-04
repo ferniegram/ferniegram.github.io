@@ -9,7 +9,7 @@ function logoTargetAnim(tgDoc) {
     })
     .add(tgDoc.querySelector('#telegram-logo-target'), {
         rotate: 0,
-        onCompleted: fernschreiberToFerniegramAnim
+        onCompleted: fernschreiberToYastAnim
     }, 0)
     .add([...tgDoc.querySelectorAll('#linear-gradient stop')], {
         'stop-color': (el, i) => {
@@ -18,11 +18,11 @@ function logoTargetAnim(tgDoc) {
     }, 0);
 }
 
-var whyAnimationSetup = false;
+var whyAnimationReady = false;
 
 function setupWhyAnimation() {
-    if (whyAnimationSetup) return;
-    whyAnimationSetup = true;
+    if (whyAnimationReady) return;
+    whyAnimationReady = true;
 
     const tgLogo = document.querySelector('#telegram-logo');
     const tgDoc = tgLogo.contentDocument;
@@ -45,8 +45,8 @@ function setupWhyAnimation() {
     });
 }
 
-function fernschreiberToFerniegramAnim() {
-    const doc = document.querySelector('#fernschreiber-to-ferniegram-logo').contentDocument;
+function fernschreiberToYastAnim() {
+    const doc = document.querySelector('#fernschreiber-to-yast-logo').contentDocument;
 
     // for some reason, you can't pass doc.querySelectorAll(whatever) as a target
     // and need to do [...doc.querySelectorAll(whatever)]
@@ -65,25 +65,36 @@ function fernschreiberToFerniegramAnim() {
             ['#214fec', '#459ce7', '#45c9e7'][i]
     }, 0)
     .add(doc.querySelector('#inner-background'), {
-        'fill': '#00d5ff'
+        'fill': '#2db5e0'
     }, 0);
 
     var delay = 0;
     for (const x of ['1, 2', 3, 4, 5, 6, '7, 8']) {
-        delay += 50;
+        delay += 5;
         var elements = [...doc.querySelectorAll(('' + x).split(', ').map(x => '#mdot' + x).join(', '))];
-        tl.add(elements, {fill: '#0084ff'}, delay);
+        tl.add(elements, {fill: 'transparent'}, delay);
     }
 
     delay = 0;
     for (const x of ['15', '11, 25', '12, 14, 35', '21, 22, 24', '32, 34', '31, 42, 13']) {
-        delay += 50;
+        delay += 5;
         var elements = [...doc.querySelectorAll(x.split(', ').map(x => '#dot' + x).join(', '))];
         tl.add(elements, {
             keyframes: {
                 '50%': {fill: '#0084ff'},
-                '100%': {fill: '#fffee3'},
+                '100%': {fill: 'transparent'},
             }
         }, delay);
     }
+
+    tl.add(doc.querySelector('.yast-y'), {
+        ease: anime.spring({ bounce: .35 }),
+        duration: 250,
+        translateY: 0
+    }, 1000);
+    tl.add(doc.querySelector('#text1'), {
+        duration: 450,
+        ease: 'inOutQubic',
+        clipPath: 'inset(-10px -10px -10px -10px)'
+    }, 1300);
 }
